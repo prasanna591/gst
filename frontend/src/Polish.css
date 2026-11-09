@@ -1,0 +1,213 @@
+/* ---------- Sync status (sidebar) ---------- */
+.sync-pill { display:flex; align-items:center; gap:8px; margin:0 4px 10px; padding:8px 12px;
+  border-radius:999px; font-size:12.5px; font-weight:600; border:1px solid transparent; }
+.sync-pill i { width:8px; height:8px; border-radius:50%; flex:none; }
+.sync-pill.ok   { background:#ecfdf3; color:#15803d; border-color:#bbf7d0; } .sync-pill.ok i   { background:#16a34a; }
+.sync-pill.wait { background:#fffbeb; color:#b45309; border-color:#fde68a; } .sync-pill.wait i { background:#f59e0b; }
+.sync-pill.off  { background:#f1f5f9; color:#64748b; border-color:#e2e8f0; } .sync-pill.off i  { background:#94a3b8; }
+.sync-pill.bad  { background:#fef2f2; color:#b91c1c; border-color:#fecaca; } .sync-pill.bad i  { background:#dc2626; }
+
+/* ---------- Drive card (Settings) ---------- */
+.drive-card { display:flex; gap:16px; align-items:center; padding:16px 18px; margin:6px 0 18px;
+  border:1px solid #e5e9f2; border-radius:14px; background:#f8fafc; }
+.drive-ico { width:46px; height:46px; border-radius:12px; display:grid; place-items:center; flex:none;
+  background:#e8efff; color:#2457d6; }
+.drive-card.ok .drive-ico { background:#dcfce7; color:#16a34a; }
+.drive-card.wait .drive-ico { background:#fef3c7; color:#d97706; }
+.drive-card.bad .drive-ico { background:#fee2e2; color:#dc2626; }
+.drive-main { flex:1; min-width:0; }
+.drive-main strong { display:block; font-size:15px; }
+.drive-main span { display:block; font-size:13px; color:#64748b; margin-top:2px; overflow:hidden; text-overflow:ellipsis; }
+.drive-meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:18px; }
+.drive-meta div { padding:12px 14px; border:1px solid #e5e9f2; border-radius:12px; }
+.drive-meta small { display:block; color:#94a3b8; font-size:12px; margin-bottom:3px; }
+.drive-meta b { font-size:14px; }
+
+/* ---------- Chips ---------- */
+.chip { display:inline-block; padding:3px 10px; border-radius:999px; font-size:12px; font-weight:600; white-space:nowrap; }
+.chip-amber { background:#fef3c7; color:#b45309; }
+.chip-red   { background:#fee2e2; color:#b91c1c; }
+.chip-green { background:#dcfce7; color:#15803d; }
+.chip-grey  { background:#f1f5f9; color:#64748b; }
+
+
+
+/* ---------- Tabs ---------- */
+.tabs { display:inline-flex; gap:4px; padding:4px; background:#f1f5f9; border-radius:12px; margin-bottom:14px; }
+.tabs button { border:0; background:transparent; padding:8px 16px; border-radius:9px; font:inherit;
+  font-size:13.5px; font-weight:600; color:#64748b; cursor:pointer; }
+.tabs button.on { background:#fff; color:#2457d6; box-shadow:0 1px 4px rgba(15,23,42,.1); }
+
+/* ---------- Fees / generic table touches ---------- */
+tr.row-late { background:#fffafa; }
+.money { font-variant-numeric:tabular-nums; font-weight:600; }
+.page-note { font-size:13px; color:#64748b; margin:0 0 12px; }
+/* ---------- Google Drive section ---------- */
+.gd { padding:0; overflow:hidden; }
+.gd-head { display:flex; align-items:center; gap:14px; padding:22px 24px; border-bottom:1px solid #e5e9f2; }
+.gd-logo { width:44px; height:44px; border-radius:12px; background:#e8efff; color:#2457d6;
+  display:grid; place-items:center; flex:none; }
+.gd-head h2 { margin:0; font-size:18px; }
+.gd-head p { margin:2px 0 0; font-size:13px; color:#64748b; }
+
+.gd-body { padding:22px 24px; display:grid; gap:20px; }
+
+.gd-status { display:flex; align-items:center; gap:14px; padding:16px 18px; border-radius:14px;
+  border:1px solid #e5e9f2; background:#f8fafc; }
+.gd-status .ico { width:42px; height:42px; border-radius:50%; display:grid; place-items:center; flex:none;
+  background:#e2e8f0; color:#64748b; }
+.gd-status.ok   { background:#f0fdf4; border-color:#bbf7d0; } .gd-status.ok .ico   { background:#dcfce7; color:#16a34a; }
+.gd-status.wait { background:#fffbeb; border-color:#fde68a; } .gd-status.wait .ico { background:#fef3c7; color:#d97706; }
+.gd-status.bad  { background:#fef2f2; border-color:#fecaca; } .gd-status.bad .ico  { background:#fee2e2; color:#dc2626; }
+.gd-status .txt { flex:1; min-width:0; }
+.gd-status .txt strong { display:block; font-size:15px; }
+.gd-status .txt span { display:block; font-size:13px; color:#475569; margin-top:2px; word-break:break-all; }
+
+.gd-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; }
+.gd-cell { padding:14px 16px; border:1px solid #e5e9f2; border-radius:12px; background:#fff; }
+.gd-cell small { display:block; font-size:12px; color:#94a3b8; margin-bottom:4px; }
+.gd-cell b { font-size:14px; color:#0f172a; }
+
+.gd-actions { display:flex; gap:10px; flex-wrap:wrap; }
+.gd-actions .primary-btn, .gd-actions .secondary-btn { display:inline-flex; align-items:center; gap:8px; }
+
+.gd-steps { margin:0; padding:0; list-style:none; display:grid; gap:12px; }
+.gd-steps li { display:flex; gap:12px; align-items:flex-start; font-size:13.5px; color:#475569; line-height:1.5; }
+.gd-steps li b { flex:none; width:26px; height:26px; border-radius:50%; background:#e8efff; color:#2457d6;
+  display:grid; place-items:center; font-size:13px; }
+
+.gd-foot { padding:14px 24px; background:#f8fafc; border-top:1px solid #e5e9f2; font-size:12.5px; color:#64748b;
+  display:flex; align-items:center; gap:8px; }
+  /* ---------- Users and Fees pages ---------- */
+.pill { display:inline-block; padding:3px 11px; border-radius:999px; font-size:12px; font-weight:600; }
+.pill-admin { background:#e8efff; color:#2457d6; }
+.pill-staff { background:#f1f5f9; color:#475569; }
+.pill-paid  { background:#dcfce7; color:#15803d; }
+.pill-pending { background:#fef3c7; color:#b45309; }
+.pill-late  { background:#fee2e2; color:#b91c1c; }
+
+.due-note { display:block; font-size:12px; margin-top:2px; color:#64748b; }
+.due-note.late { color:#b91c1c; font-weight:600; }
+.due-note.soon { color:#b45309; font-weight:600; }
+
+.person { display:flex; align-items:center; gap:12px; }
+.person strong { display:block; font-size:14.5px; }
+.person small { display:block; color:#64748b; font-size:12.5px; }
+.you-tag { margin-left:6px; padding:1px 8px; border-radius:999px; background:#e8efff; color:#2457d6; font-size:11px; font-weight:700; }
+
+tr.row-late td:first-child { box-shadow: inset 4px 0 0 #dc2626; }
+tr.row-paid td { opacity:.65; }
+.text-btn { display:inline-flex; align-items:center; gap:6px; height:34px; padding:0 12px; border-radius:10px;
+  border:1px solid #e5e9f2; background:#fff; font:inherit; font-size:13px; font-weight:600; color:#334155; cursor:pointer; }
+.text-btn:hover { background:#f8fafc; }
+.text-btn.danger { color:#b91c1c; }
+.text-btn.good { color:#15803d; }
+.panel-tools { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:14px; }
+.panel-tools .tabs { margin-bottom:0; }
+.panel-tools .search-box { flex:1; min-width:220px; max-width:360px; }
+/* ---------- Important dates and Clients touches ---------- */
+.kind-ico { width:38px; height:38px; border-radius:11px; display:grid; place-items:center; flex:none;
+  background:#e8efff; color:#2457d6; }
+.kind-ico.k-birthday { background:#fce7f3; color:#db2777; }
+.kind-ico.k-registration { background:#e0f2fe; color:#0284c7; }
+.kind-ico.k-anniversary { background:#f3e8ff; color:#9333ea; }
+.kind-ico.k-deadline { background:#fee2e2; color:#dc2626; }
+.kind-ico.k-custom { background:#fef3c7; color:#d97706; }
+
+.pill-birthday { background:#fce7f3; color:#be185d; }
+.pill-registration { background:#e0f2fe; color:#0369a1; }
+.pill-anniversary { background:#f3e8ff; color:#7e22ce; }
+.pill-deadline { background:#fee2e2; color:#b91c1c; }
+.pill-custom { background:#fef3c7; color:#b45309; }
+
+.when { display:inline-block; min-width:92px; text-align:center; padding:4px 12px; border-radius:999px;
+  font-size:12px; font-weight:700; }
+.when.today { background:#dc2626; color:#fff; }
+.when.soon  { background:#fee2e2; color:#b91c1c; }
+.when.near  { background:#fef3c7; color:#b45309; }
+.when.far   { background:#f1f5f9; color:#64748b; }
+.when.past  { background:#f1f5f9; color:#94a3b8; }
+
+.date-cell strong { display:block; font-size:14px; }
+.date-cell small { color:#64748b; font-size:12px; }
+.what-cell { display:flex; align-items:center; gap:12px; }
+.what-cell strong { display:block; font-size:14.5px; }
+.what-cell small { display:block; color:#64748b; font-size:12.5px; }
+.muted { color:#94a3b8; }
+tr.row-today td:first-child { box-shadow: inset 4px 0 0 #dc2626; }
+/* ---------- Forgot password ---------- */
+.fp-switch { display:grid; grid-template-columns:1fr 1fr; gap:4px; padding:4px; background:#f1f5f9;
+  border-radius:12px; margin:18px 0 20px; }
+.fp-switch button { border:0; background:transparent; padding:10px 8px; border-radius:9px; font:inherit;
+  font-size:13.5px; font-weight:600; color:#64748b; cursor:pointer; }
+.fp-switch button.on { background:#fff; color:#2457d6; box-shadow:0 1px 4px rgba(15,23,42,.1); }
+
+.fp-steps { display:flex; align-items:center; gap:8px; margin:6px 0 18px; font-size:12.5px; color:#94a3b8; font-weight:600; }
+.fp-steps span { display:inline-flex; align-items:center; gap:6px; }
+.fp-steps b { width:22px; height:22px; border-radius:50%; background:#e2e8f0; color:#64748b;
+  display:grid; place-items:center; font-size:12px; }
+.fp-steps .on { color:#2457d6; } .fp-steps .on b { background:#2457d6; color:#fff; }
+.fp-steps i { flex:1; height:2px; background:#e2e8f0; max-width:40px; }
+
+.fp-ok { display:flex; gap:10px; align-items:flex-start; padding:12px 14px; border-radius:12px;
+  background:#f0fdf4; border:1px solid #bbf7d0; color:#166534; font-size:13.5px; margin-bottom:14px; }
+.fp-done { text-align:center; padding:10px 0 4px; }
+.fp-done .big { width:60px; height:60px; border-radius:50%; background:#dcfce7; color:#16a34a;
+  display:grid; place-items:center; margin:0 auto 14px; }
+.fp-code { letter-spacing:8px; text-align:center; font-size:22px; font-weight:700; }
+.fp-back { display:flex; align-items:center; justify-content:center; gap:6px; margin-top:16px;
+  font-size:14px; font-weight:600; color:#2457d6; text-decoration:none; }
+.fp-back:hover { text-decoration:underline; }
+.fp-hint { font-size:12.5px; color:#64748b; text-align:center; margin:14px 0 0; line-height:1.5; }
+/* ---------- Forgot password: success screen ---------- */
+.login-card .fp-done {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; padding: 8px 0 0; gap: 0;
+}
+.login-card .fp-done .big {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: #dcfce7; color: #16a34a;
+  display: grid; place-items: center;
+  margin: 0 0 24px; box-shadow: 0 0 0 8px #f0fdf4;
+}
+.login-card .fp-done h1 {
+  margin: 0 0 12px !important;
+  font-size: 26px; line-height: 1.25 !important;
+  letter-spacing: -0.3px;
+}
+.login-card .fp-done p {
+  margin: 0 0 28px !important;
+  max-width: 300px; font-size: 14.5px;
+  line-height: 1.6 !important; color: #64748b;
+}
+.login-card .fp-done .login-submit {
+  width: 100%; margin: 0 !important;
+}
+.login-card .fp-done .fp-meta {
+  display: block; margin-top: 18px;
+  font-size: 12.5px; color: #94a3b8;
+}
+.login-side h2 { font-size:30px; line-height:1.25; max-width:420px; }
+/* ---------- Dashboard: tasks, fees, dates ---------- */
+.dx-list { list-style:none; margin:10px 0 0; padding:0; display:grid; gap:8px; }
+.dx-row { display:flex; align-items:center; gap:12px; padding:11px 14px; background:#fff;
+  border:1px solid #e5e9f2; border-left:4px solid #cbd5e1; border-radius:12px; }
+.dx-row.high { border-left-color:#f59e0b; }
+.dx-row.late { border-left-color:#dc2626; background:#fffafa; }
+.dx-check { width:20px; height:20px; accent-color:#2457d6; flex:none; cursor:pointer; }
+.dx-body { flex:1; min-width:0; }
+.dx-body strong { display:block; font-size:14px; }
+.dx-body small { color:#64748b; font-size:12.5px; }
+/* ---------- Tasks page ---------- */
+.dx-row.done { opacity: .65; background: #f8faff; }
+.dx-row.done .dx-body strong { text-decoration: line-through; color: #64748b; }
+.dx-actions { display: flex; gap: 6px; flex: none; }
+.panel > .dx-list { margin-top: 18px; }
+/* ---------- Sidebar badges ---------- */
+.nav-badge { margin-left:auto; min-width:22px; height:22px; padding:0 7px; border-radius:999px;
+  display:grid; place-items:center; background:#2457d6; color:#fff; font-size:11.5px; font-weight:700; }
+.nav-badge.red { background:#dc2626; }
+/* ---------- Documents page ---------- */
+.doc-title { max-width: 260px; }
+.doc-title strong, .doc-title small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.panel-tools + .toolbar { margin-top: 4px; }

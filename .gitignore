@@ -1,0 +1,45 @@
+# Secrets and client data
+.env
+.env.*
+!.env.example
+backend/uploads/
+backups/
+
+# Python
+venv/
+venv_build/
+.venv/
+__pycache__/
+*.pyc
+wheels/
+backend/build/
+backend/dist/
+
+# Node and build output
+node_modules/
+frontend/dist/
+frontend/release/
+*.log
+
+# A copy of the project inside the project
+GST_Client_Management_System/
+
+# Editor and system
+.vscode/
+.DS_Store
+Thumbs.db
+# Sensitive and generated files
+.env
+.env.*
+!.env.example
+**/venv/
+**/node_modules/
+**/uploads/
+*.sqlite
+*.db
+*.dump
+*.zip
+*.pem
+*.key
+**/build.log
+**/*.backup
