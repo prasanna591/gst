@@ -51,7 +51,7 @@
     ],
     "extraResources": [
       {
-        "from": "C:/dev/GST_Backend_Release/GSTClientApp",
+        "from": "../backend/dist/GSTClientApp",
         "to": "backend",
         "filter": [
           "**/*"
