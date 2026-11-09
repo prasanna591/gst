@@ -9,7 +9,7 @@ let backendProcess;
 let quitting = false;
 
 const isDev = !app.isPackaged;
-const BACKEND_URL = "http://127.0.0.1:8000/openapi.json";
+const BACKEND_URL = "http://127.0.0.1:8001/openapi.json";
 
 function isBackendReady() {
   return new Promise((resolve) => {
